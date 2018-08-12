@@ -8,8 +8,8 @@
     "start": "node app.js",
   },
   "engines": {
-    "node": "10.6.0",
-    "npm": "6.1.0"
+    "node": "8.11.3",
+    "npm": "5.6.0"
   },
   "author": "Constantinos Georgiou",
   "license": "ISC",
