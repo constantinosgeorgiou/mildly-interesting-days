@@ -1,27 +1,27 @@
 <% include ./partials/header %>
 
-  <nav class="teal accent-3" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="/" class="brand-logo">MInD</a>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/">Give it a try!</a></li>
-        <li><a href="/developers">API</a></li>
-        <li class="active"><a href="/about">About</a></li>
-      </ul>
-    </div>
-  </nav>
+	<nav class="teal accent-3" role="navigation">
+		<div class="nav-wrapper container">
+			<a id="logo-container" href="/" class="brand-logo">MInD</a>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="/">Give it a try!</a></li>
+				<li><a href="/developers">API</a></li>
+				<li class="active"><a href="/about">About</a></li>
+			</ul>
+		</div>
+	</nav>
   
 	<ul id="slide-out" class="sidenav" >
-		<li><div class="user-view">
-			<div class="background">
-			<img src="/images/sidenav_2.jpg">
+		<li>
+			<div class="user-view">
+				<div class="background">
+					<img src="/images/sidenav_2.jpg">
+				</div>
+				<h3 class="header center teal-text text-accent-3"><strong>MInD</strong></h3>
+				<br>
 			</div>
-			<h3 class="header center teal-text text-accent-3"><strong>MInD</strong></h3>
-			<br>
-			<!-- <p class="brand-logo teal-text text-accent-3 large">MInD</p>
-			<a><span class="white-text name">MInD</span></a> -->
-			</div></li>
+		</li>
         <li class="waves-effect"><a href="/"><i class="material-icons">event</i>Give it a try!</a></li>
         <li><a class="waves-effect" href="/developers"><i class="material-icons">code</i>API</a></li>
         <li><a class="waves-effect" href="/about"><i class="material-icons">account_circle</i>About</a></li>
@@ -63,46 +63,46 @@
 
 
 
-  <footer class="page-footer deep-purple lighten-1">
-	<div class="container">
-	  <div class="row">
-		<div class="col l6 s12">
-		  <h5><a class="white-text" href="/about">About the project</a></h5>
-          <p class="grey-text text-lighten-4">Well, there isn't much to be said about the project, really. If you want to know why it was made click <a class="white-text" href="/about"><u>here</u></a>!</p>
-        </div>
-		<div class="col l3 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="white-text" target="_blank" href="https://www.constantinosgeorgiou.com/">Dev's Website</a></li>
-            <li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/constantinosgeorgiou/">LinkedIn</a></li>
-            <li><a class="white-text" target="_blank" href="https://github.com/constantinosgeorgiou">GitHub</a></li>
-            <li><a class="white-text" href="/developers">Developers</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Stalk me here</h5>
-          <ul>
-            <li><a class="white-text" target="_blank" href="https://www.youtube.com/channel/UC7KNllcUSufBtWCNnrurhDQ">YouTube</a></li>
-            <li><a class="white-text" target="_blank" href="https://www.instagram.com/georgioucostantinos/">Instagram</a></li>
-          </ul>
-        </div>
-	  </div>
-	</div>
-	<div class="footer-copyright">
-	  <div class="container">
-	  Made by <a class="yellow-text text-lighten-1" target="_blank" href="https://www.constantinosgeorgiou.com/">Constantinos Georgiou</a>
-	  </div>
-	</div>
-  </footer>
+	<footer class="page-footer deep-purple lighten-1">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5><a class="white-text" href="/about">About the project</a></h5>
+					<p class="grey-text text-lighten-4">Well, there isn't much to be said about the project, really. If you want to know why it was made click <a class="white-text" href="/about"><u>here</u></a>!</p>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="white-text" target="_blank" href="https://www.constantinosgeorgiou.com/">Dev's Website</a></li>
+						<li><a class="white-text" target="_blank" href="https://www.linkedin.com/in/constantinosgeorgiou/">LinkedIn</a></li>
+						<li><a class="white-text" target="_blank" href="https://github.com/constantinosgeorgiou">GitHub</a></li>
+						<li><a class="white-text" href="/developers">Developers</a></li>
+					</ul>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Stalk me here</h5>
+					<ul>
+						<li><a class="white-text" target="_blank" href="https://www.youtube.com/channel/UC7KNllcUSufBtWCNnrurhDQ">YouTube</a></li>
+						<li><a class="white-text" target="_blank" href="https://www.instagram.com/georgioucostantinos/">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Made by <a class="yellow-text text-lighten-1" target="_blank" href="https://www.constantinosgeorgiou.com/">Constantinos Georgiou</a>
+			</div>
+		</div>
+	</footer>
 
-  <script>
-	const Calendar = document.querySelector('.datepicker');
-	M.Datepicker.init(Calendar, {
-		autoClose: true,
-		format: 'mmmm d',
-	});
-	const NavBar = document.querySelector('.sidenav');
-	M.Sidenav.init(NavBar, {});
-  </script>
+	<script>
+		const Calendar = document.querySelector('.datepicker');
+		M.Datepicker.init(Calendar, {
+			autoClose: true,
+			format: 'mmmm d',
+		});
+		const NavBar = document.querySelector('.sidenav');
+		M.Sidenav.init(NavBar, {});
+	</script>
 
 <% include ./partials/footer %>
