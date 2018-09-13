@@ -38,7 +38,7 @@
 				<div class="row center">
 					<form action="/" method="POST">
 					  <div class="input-field">
-						<input name="datepicker" type="text" class="datepicker center" placeholder="October 10">
+						<input name="datepicker" type="text" class="datepicker center" value="<%= today %>">
 						<button class="btn-large waves-effect waves-light orange" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
 					  </div>
 					</form>
@@ -109,6 +109,7 @@
 		M.Datepicker.init(Calendar, {
 			autoClose: true,
 			format: 'mmmm d',
+			setDefaultDate: true,
 		});
 		const NavBar = document.querySelector('.sidenav');
 		M.Sidenav.init(NavBar, {});
